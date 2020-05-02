@@ -12,6 +12,9 @@ PORT = 5555
 
 def run():
     c = get_menu()
+
+    os.chdir(DIR)
+    
     while(c != '4'):
         if(c == '1'):
             os.system(f"cmd /c adb connect {IP}:{PORT}")
